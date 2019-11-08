@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <a href="#">Hi</a>
+    <script>
+        /*
+            输出1 ， 一是元素节点的数值代号值
+            console.log(Node.ELEMENT_NODE);
+        */
+
+        /* 
+        打印所有的节点类型与它们的值
+        for(var key in Node){
+            console.log(key,' = ' + Node[key]);
+        };
+        */
+
+
+
+        var nodeArray = document.querySelector("a");
+        var props = [];
+
+        for(var key in nodeArray){
+            props.push(key);
+        }    
+
+        console.log(props.sort());
+    
+    </script>
+</body>
+</html>
