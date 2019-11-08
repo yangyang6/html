@@ -10,9 +10,9 @@
 
 
 节点对象类型
-** DOCUMENT_NODE ** (如window.document)
-** ELEMENT_NODE ** (如<body>,<a>,<p>,<script>,<style>,<html>,<h1>)
-** ATTRIBUTE_NODE ** (如class="funEdges")
-** TEXT_NODE ** (如HTML文档中由换行符与空白符构成的文本字符)
+**DOCUMENT_NODE** (如window.document)
+**ELEMENT_NODE** (如<body>,<a>,<p>,<script>,<style>,<html>,<h1>)
+**ATTRIBUTE_NODE** (如class="funEdges")
+**TEXT_NODE** (如HTML文档中由换行符与空白符构成的文本字符)
 
 典型DOM树里的每个节点对象都从Node继承属性和方法
