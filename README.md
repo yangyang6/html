@@ -26,3 +26,7 @@
 
 
 典型DOM树里的每个节点对象都从Node继承属性和方法
+
+用JavaScript的两个方法以编程的方式创建Element与Text节点
+
+**createElement()、createTextNode()**
