@@ -9,7 +9,11 @@
 <code>background-size:0.8rem 0.8rem;</code>
 
 
-节点对象类型
+
+
+节点对象类型：
+
+
 **DOCUMENT_NODE** (如window.document)
 
 **ELEMENT_NODE** (如body,a,p,script,style,html,h标签)
