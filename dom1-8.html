@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div id="A"></div>
+    <span id="B"></span>
+    <div id="C"></div>
+    <div id="D"></div>
+    <div id="E"></div>
+
+    <script>
+        /*创建一个 strong元素与文本节点，并添加到DOM*/
+        /*innerHTML调用了一个沉重且高消耗的HTML解析器*/
+        document.getElementById('A').innerHTML = '<strong>Hi</strong>'
+
+        /*创建一个div元素与文本节点 来替换<span id ="B">*/
+        document.getElementById('B').outerHTML = '' + '<div id = "B" class="new">Whats Shaking</div>';
+
+        /*创建一个文本节点并用它更新*/
+        document.getElementById('C').textContent = 'dudu';
+
+        /*创建一个文本节点，并用它更新*/
+        /*innerText能意识到样式，不会犯规隐藏元素的文本内容，而textContent则会返回*/
+        document.getElementById('D').innerText = 'Keep it';
+
+        /*创建一个文本节点并用它替换 div#E (注意div#E没了)*/
+        document.getElementById('E').outerText = 'real!';
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <i id="elm">最近</i>
+</body>
+<script>
+    var elm = document.getElementById('elm');
+
+    elm.insertAdjacentHTML('beforebegin','<span>你好</span>');
+    elm.insertAdjacentHTML('afterbegin','<span>年轻人</span>');
+    elm.insertAdjacentHTML('beforeend','<span>怎么</span>');
+    elm.insertAdjacentHTML('afterend','<span>样?</span>');
+
+    //console.log(document.body.innerHTML);
+</script>
+</html>

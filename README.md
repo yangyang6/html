@@ -30,3 +30,7 @@
 用JavaScript的两个方法以编程的方式创建Element与Text节点
 
 **createElement()、createTextNode()**
+
+
+innerHTML、outerHTML、textContent及insertAdjacentHTML() 属性与方法提供了使用JavaScript字符串创建并向DOM中添加节点的功能
+
