@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>你好</p>
+    <script>
+        var elementNode = document.createElement('strong');
+        var textNode = document.createTextNode('年轻人');
+
+        document.querySelector('p').appendChild(elementNode);
+        document.querySelector('strong').appendChild(textNode);
+
+        console.log(document.body.innerHTML);
+    </script>
+</body>
+</html>

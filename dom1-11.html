@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="A">你好</div>
+    <div id="B">年轻人</div>
+
+    <script>
+        //移动元素节点
+        var divA = document.getElementById('A');
+        divA.parentNode.removeChild(divA);
+
+        var divB= document.getElementById('B').firstChild;
+        divB.parentNode.removeChild(divB);
+
+        console.log(document.body.innerHTML);
+    </script>
+</body>
+</html>

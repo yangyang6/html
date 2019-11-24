@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="A">你好</div>
+        <div id="B">年轻人</div>
+
+        <script>
+
+            //替换标签div A
+            var divA = document.getElementById('A');
+            var newSpan = document.createElement('span');
+            newSpan.textContent = '雷猴';
+            divA.parentNode.replaceChild(newSpan,divA);
+
+            var divB = document.getElementById('B').firstChild;
+            var newText = document.createTextNode('梁寨');
+            divB.parentNode.replaceChild(newText,divB);
+
+            console.log(document.body.innerHTML);
+
+        </script>
+</body>
+</html>

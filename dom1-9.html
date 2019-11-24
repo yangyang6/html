@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="A"><i>你好</i></div>
+    <div id="B">年轻人<strong>!</strong></div>
+
+    <!--提取DOM树种的部分作为JavaScript字符串-->
+    <script>
+        console.log(document.getElementById('A').innerHTML);
+        console.log(document.getElementById('A').outerHTML);
+
+        console.log(document.getElementById('B').textContent);
+
+        console.log(document.getElementById('B').innerText);
+        console.log(document.getElementById('B').outerText);
+    </script>
+</body>
+</html>
