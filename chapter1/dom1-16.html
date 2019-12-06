@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul><!-- comment -->
+        <li id="A">foo</li>
+        <li id="B">bar</li>
+        <!-- comment -->
+    </ul>
+    <script>
+        var ul = document.querySelector('ul');
+        console.log(ul.parentNode.nodeName);
+
+        console.log(ul.firstChild.nodeName);
+
+        /*
+            换行符
+        */
+        console.log(ul.lastChild.nodeName);
+
+        /* 第一个li的后一个节点是啥 */
+        console.log(ul.querySelector('#A').nextSibling.nodeName);
+        /* 最后一个li的前一个节点是啥 */
+        console.log(ul.querySelector('#B').previousSibling.nodeName);
+
+
+        /* ul的所有子节点*/
+        console.log(ul.children);
+
+        console.log(ul.firstElementChild.parentElement);
+    </script>
+</body>
+</html>
