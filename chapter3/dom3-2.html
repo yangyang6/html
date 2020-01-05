@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#">Hi</a>
+    <script>
+        var anchor = document.querySelector('a');
+
+        console.log(Object.keys(anchor).sort());
+
+        //元素自有与继承的属性
+        var documentPropertiesIncludeInherited = [];
+        for(var p in document){
+            documentPropertiesIncludeInherited.push(p);
+        }
+
+        console.log(documentPropertiesIncludeInherited.sort());
+        var documentPropertiesInherited = [];
+        //元素继承的属性
+        for(var p in document){
+            if(!document.hasOwnProperty(p)){
+                documentPropertiesInherited.push(p);
+            }
+        }
+        console.log(documentPropertiesInherited);
+    </script>
+</body>
+</html>

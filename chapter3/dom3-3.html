@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Element节点是在浏览器解析一份HTML文档时为我们实例化的，基于该文档内容建立了一个相应的DOM树
+        var elementNode = document.createElement('textarea');
+
+        document.body.appendChild(elementNode);
+        console.log(document.querySelector('textarea'));
+    </script>
+</body>
+</html>

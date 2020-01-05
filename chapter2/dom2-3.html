@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = document;
+        console.log("title:" + d.title);
+        console.log("url:" + d.URL);
+        console.log("referer:" + d.referrer);
+        console.log("lastModify:" + d.lastModified);
+
+        /*输出怪异模式（BackCompat） 或 严格模式（CSS1Compat）*/
+        console.log("compatibility:" + d.compatMode);
+    </script>
+</body>
+</html>
