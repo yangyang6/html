@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" title="title" data-foo="datafoo" class="yes" style="margin:0;" foo="boo">aa</a>
+    <script>
+        var atts = document.querySelector('a').attributes;
+        //输出标签的属性和属性值
+        for(var i=0;i<atts.length;i++){
+            console.log(atts[i].nodeName + "=" + atts[i].nodeValue);
+        }
+
+
+        //还有  removeAttribute 和 setAttribute 和 hasAttribute 等方法
+    </script>
+</body>
+</html>
