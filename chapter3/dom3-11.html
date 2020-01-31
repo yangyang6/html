@@ -7,18 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="visible"></div>
-
+    <div class="big brown bear"></div>
     <script>
         /*
-            变换某个类属性值
+            判断某属性值是否包含有某一特定值
         */
         var elm = document.querySelector('div');
 
-        elm.classList.toggle('visible');
-        elm.classList.toggle('grow');
-
-        console.log(elm.className);
+        console.log(elm.classList.contains('brown'));
     </script>
 </body>
 </html>

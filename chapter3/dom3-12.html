@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div data-foo-foo="foo" data-bar-bar="bar">
+
+    </div>
+
+    <script>
+        /*
+            获取与设置 data-* 属性
+        */
+        var elm = document.querySelector('div');
+        console.log(elm.dataset.fooFoo);
+        console.log(elm.dataset.barBar);
+        
+        //设置
+        elm.dataset.gooGoo = "goo";
+        console.log(elm.dataset);
+
+        //删除操作
+        delete elm.dataset.barBar;
+
+        console.log(elm);
+    </script>
+</body>
+</html>
