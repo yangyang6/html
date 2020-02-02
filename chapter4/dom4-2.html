@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="liClass">Hello</li>
+        <li class="liClass">big</li>
+        <li class="liClass">bad</li>
+        <li class="liClass">world</li>
+    </ul>
+
+    <script>
+        /*
+            选取/创建一个元素节点列表（即NodeList）
+            getElementsByTagName、getElementsByClassName 这两个方法创建实例是实时的，并且会即时反映文档的当前状态
+            querySelectorAll 并不返回一个实时的元素列表，querySelectorAll方法创建的列表是该列表创建时文档的快照，此列表是静态的，而非实时的
+        */
+        console.log(document.querySelectorAll('li'));
+        console.log(document.getElementsByTagName('li'));
+        console.log(document.getElementsByClassName('liClass'));
+    </script>
+</body>
+</html>
