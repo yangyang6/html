@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="liClass">Hello</li>
+            <li class="liClass">big</li>
+            <li class="liClass">bad</li>
+            <li class="liClass">world</li>
+        </ul>
+    </div>
+
+    <ul>
+        <li class="liClass">Hello</li>
+    </ul>
+
+    <script>
+        /*
+            选择一个div作为上下文，从而执行选取方法，让它们只在div的内容范围内查找
+        */
+        var div = document.querySelector('div');
+
+        console.log(div.querySelector('ul'));
+        console.log(div.querySelectorAll('li'));
+        console.log(div.getElementsByTagName('li'));
+        console.log(div.getElementsByClassName('liClass'));
+
+        /*
+            这些方法不仅在实时DOM中操作，也可以用在代码中以编程方式创建的DOM结构中
+        */
+        var divElm = document.createElement('div');
+        var ulElm = document.createElement('ul');
+        var liElm = document.createElement('li');
+
+        liElm.setAttribute('class','liClass');
+        ulElm.appendChild(liElm);
+        divElm.appendChild(ulElm);
+
+        console.log(divElm.querySelector('ul'));
+        console.log(divElm.querySelectorAll('li'));
+        console.log(divElm.getElementsByTagName('li'));
+        console.log(divElm.getElementsByClassName('liClass'));
+
+    </script>
+</body>
+</html>
