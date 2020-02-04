@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{height: 100px;width: 100px;overflow: auto;}
+        p{height: 1000px;width: 1000px;background-color: red;}
+    </style>
+</head>
+<body>
+    <div><p></p></div>
+    <script>
+        var div = document.querySelector('div');
+        div.scrollLeft = 750;
+        div.scrollTop = 750;
+
+        /*
+            使用scrollTop及scrollLeft获取并设置从上、左边滚动的距离
+
+            有点没看懂
+        */
+        console.log(div.scrollTop,div.scrollLeft);
+    </script>
+</body>
+</html>
