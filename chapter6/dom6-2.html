@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+
+        /*
+            获取、设置及移除单个内联CSS属性
+        */
+        var divStyle = document.querySelector('div').style;
+
+        //set
+        divStyle.backgroundColor = "red";
+        divStyle.border = "1px solid black";
+        divStyle.width = "100px";
+        divStyle.height = "100px";
+
+        //get
+        console.log(divStyle.width);
+
+        //remove
+        divStyle.border = '';
+
+        //也支持方法的访问setProperty(),getPropertyValue(),removeProperty()方法
+        divStyle.setProperty("border","1px solid black");
+    </script>
+</body>
+</html>
