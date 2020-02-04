@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>hello</li>
+        <li>world</li>
+    </ul>
+
+    <script>
+        //matchesSelector()并不接受浏览器待见，以后会改名为matches()
+        //console.log(document.querySelector('li').webkitMatchesSelector('li:first-child'));
+        console.log(document.querySelector('li').mozMatchesSelector('li:first-child'));
+    </script>
+</body>
+</html>

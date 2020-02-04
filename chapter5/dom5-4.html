@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{height: 25px;width: 25px;background-color: red;border: 25px solid gray;padding: 25px;}
+    </style>
+</head>
+<body>
+    
+    <div></div>
+    <script>
+        /*
+            获取元素在视区中的尺寸（边框 + 填充 + 内容）
+        */
+        var div = document.querySelector('div').getBoundingClientRect();
+
+        console.log(div.height,div.width);
+
+
+        //也可以通过offsetHeight,offsetWeight属性获取
+        var div2 = document.querySelector('div');
+        console.log(div2.offsetHeight,div2.offsetWidth);
+    </script>
+</body>
+</html>

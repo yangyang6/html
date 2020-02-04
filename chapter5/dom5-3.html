@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{margin: 0;}
+        div{height: 50px;width: 50px;background-color: red;border: 10px solid gray;margin: 100px;}
+    </style>
+</head>
+<body>
+    
+    <div></div>
+
+    <script>
+        /*
+            使用getBoundingClientRect() 获取元素相当于视区的Top,Right,Bottom及Left边沿偏移量
+        */
+        var divEdge = document.querySelector('div').getBoundingClientRect();
+
+        console.log(divEdge.top,divEdge.right,divEdge.bottom,divEdge.left); 
+
+    </script>
+</body>
+</html>
