@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Dude </h1>
+    <p>you <strong>rock!</strong></p>
+
+    <script>
+
+        /*
+            使用textContent 移除文本标记并返回所有的子文本节点
+
+            textContent 在文档或文档类型节点上调用时将返回null，textContent也将返回<script>与<style>元素的内容
+        */
+        //console.log(document.body.textContent);
+
+        document.body.textContent = "you don't rock!";
+        console.log(document.querySelector('body').textContent);
+
+
+        //除了FireFox,支持一个与textContent 看上去差不多的属性 - innerText
+        //innerText被认为是非标准的，而且是特定的浏览器的，而textContent则是依据DOM规范实现的
+    </script>
+</body>
+</html>
