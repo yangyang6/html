@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>hi</p>
+
+    <script>
+        var text = document.querySelector('p').firstChild;
+
+
+        //text 自有属性
+        console.log(Object.keys(text).sort());
+
+        //text 自有以及继承的属性
+        var textPropertiesIncludeInherited = [];
+        for(var p in text){
+            textPropertiesIncludeInherited.push(p);
+        }
+
+        console.log(textPropertiesIncludeInherited.sort());
+
+        var textPropertiesOnlyInherited = [];
+        for(var p in text){
+            if(!text.hasOwnProperty(p)){
+                textPropertiesOnlyInherited.push(p);
+            }
+        }
+        console.log(textPropertiesOnlyInherited.sort());
+    </script>
+</body>
+</html>
